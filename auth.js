@@ -12,24 +12,15 @@ import {
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 
 
-// ================= FIREBASE =================
-// const firebaseConfig = {
-//   apiKey: "AIzaSyD54NJ6n1Zo8zAQ_ukf6HyYwz1lt1Fg-1Q",
-//   authDomain: "mywebsiteauth-1f398.firebaseapp.com",
-//   projectId: "mywebsiteauth-1f398",
-//   storageBucket: "mywebsiteauth-1f398.firebasestorage.app",
-//   messagingSenderId: "1050355297255",
-//   appId: "1:1050355297255:web:6878c794fd8a8dda02eb42"
-// };
 
-const firebaseConfig = {
-  apiKey: "AIzaSyA_muEI5nJm30VPDTW2zNYQfoMezIPQ5Wk",
-  authDomain: "projectwork02068.firebaseapp.com",
-  projectId: "projectwork02068",
-  storageBucket: "projectwork02068.firebasestorage.app",
-  messagingSenderId: "726973146553",
-  appId: "1:726973146553:web:67856e48ce530923d64268"
-};
+  const firebaseConfig = {
+    apiKey: "AIzaSyD0N9O7ctSx8_Uj02u4DMYZ7SaZx81o5js",
+    authDomain: "password-vault-proj.firebaseapp.com",
+    projectId: "password-vault-proj",
+    storageBucket: "password-vault-proj.firebasestorage.app",
+    messagingSenderId: "792775710307",
+    appId: "1:792775710307:web:2575dbea2ea25dc3aa0a56"
+  };
 
 
 const app = initializeApp(firebaseConfig);

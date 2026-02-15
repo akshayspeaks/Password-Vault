@@ -51,7 +51,7 @@ project/
 │
 ├── dashboard/
 │   ├── index.html       # Dashboard UI
-│   ├── app.js           # Dashboard logic
+│   ├── main_script.js   # Dashboard logic
 │   └── styles.css       # Dashboard styling
 │
 ├── icon.svg              # App icon (SVG)
@@ -169,9 +169,10 @@ Features:
 ## 👤 Author
 
 Akshay K
-
+Hariprakaash 
 GitHub:  
 https://github.com/akshayspeaks
+https://github.com/hari-prakaash
 
 ---
 

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Vault</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>🔐 Vault</h2>
+      <h4>Categories</h4>
+      <ul id="categoryList">
+        <li data-category="Social Media">
+          Social Media (0)
+          <button class="delete-cat">×</button>
+        </li>
+        <li data-category="Banking">
+          Banking (0)
+          <button class="delete-cat">×</button>
+        </li>
+        <li data-category="Shopping">
+          Shopping (0)
+          <button class="delete-cat">×</button>
+        </li>
+      </ul>
+      <button class="btn" id="addCategoryBtn">+ Add Category</button>
+      <button class="btn" id="settingsBtn">⚙️ Settings</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <header class="topbar">
+        <input type="text" id="search" placeholder="Search credentials...">
+        <select id="categoryDropdown"></select>
+        <button class="btn" id="addCredentialBtn">+ Add Credential</button>
+      </header>
+
+      <section class="vault">
+        <h3 id="currentCategory">Filtered by: Social Media</h3>
+        <div class="card-container" id="cardContainer"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Modal for Add Category -->
+  <div class="modal" id="categoryModal">
+    <div class="modal-content">
+      <h3>Add New Category</h3>
+      <input type="text" id="newCategory" placeholder="Enter category name">
+      <button class="btn" id="saveCategoryBtn">Save</button>
+      <button class="btn cancel" id="cancelCategoryBtn">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Modal for Add Credential -->
+  <div class="modal" id="credentialModal">
+    <div class="modal-content">
+      <h3>Add New Credential</h3>
+      <input type="text" id="credName" placeholder="e.g., Gmail, Netflix">
+      <input type="text" id="credUser" placeholder="your@email.com">
+      <input type="password" id="credPass" placeholder="Enter password">
+      <input type="text" id="credURL" placeholder="https://example.com">
+      <textarea id="credNotes" placeholder="Additional notes..."></textarea>
+      <button class="btn" id="saveCredentialBtn">Save Credential</button>
+      <button class="btn cancel" id="cancelCredentialBtn">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Modal for Settings -->
+  <div class="modal" id="settingsModal">
+    <div class="modal-content settings-content">
+      <h3>⚙️ Settings</h3>
+
+      <!-- Security -->
+      <div class="settings-section">
+        <label for="timeout">Auto-Lock Timeout (minutes)</label>
+        <input type="range" id="timeout" min="1" max="60" value="15">
+        <span id="timeoutValue">15</span>
+      </div>
+
+      <!-- Appearance -->
+      <div class="settings-section">
+        <label>Theme</label>
+        <button class="btn" id="lightModeBtn">Light Mode</button>
+        <button class="btn" id="darkModeBtn">Dark Mode</button>
+      </div>
+
+      <!-- Data Management -->
+      <div class="settings-section">
+        <label>Data Management</label>
+        <button class="btn cancel" id="deleteAllBtn">Delete All Data</button>
+      </div>
+
+      <button class="btn" id="closeSettingsBtn">Save & Close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

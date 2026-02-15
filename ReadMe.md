@@ -38,26 +38,24 @@ It supports multiple login methods, password generation, and secure cloud storag
 ---
 
 ## 📁 Project Structure
-
 ```text
-project/
-│
-├── index.html            # Login / Register page
-├── auth.js               # Firebase authentication & database logic
-├── script.js             # UI logic and password generator
-├── style.css             # Login page styling
-│
-├── dashboard.html        # Secure dashboard
+OUR-PROJECT/
 │
 ├── dashboard/
-│   ├── index.html       # Dashboard UI
-│   ├── main_script.js   # Dashboard logic
-│   └── styles.css       # Dashboard styling
+│   ├── dashboard_index.html      # Dashboard UI
+│   ├── dashboard_script.js      # Dashboard logic
+│   └── dashboard_styles.css     # Dashboard styling
 │
-├── icon.svg              # App icon (SVG)
-├── icon.png              # App icon (PNG)
+├── login/
+│   ├── index.html               # Login / Register page
+│   ├── script.js                # UI logic and password generator
+│   ├── style.css                # Login styling
+│   └── auth.js                  # Firebase authentication & database logic
 │
-└── README.md             # Project documentation
+├── icon.svg                     # App icon (SVG)
+├── icon.png                     # App icon (PNG)
+│
+└── README.md                    # Project documentation
 ```
 
 ---

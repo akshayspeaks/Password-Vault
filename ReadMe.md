@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="icon.svg" width="100">
+</p>
+
 # 🔐 SecureVault – Advanced Password Manager
 
 SecureVault is a modern, secure, and cloud-powered password manager that allows users to store, manage, and protect their credentials safely using Firebase Authentication and Firestore.
@@ -164,13 +168,13 @@ Features:
 
 ---
 
-## 👤 Author
+## 👤 Authors
 
-Akshay K
-Hariprakaash 
-GitHub:  
-https://github.com/akshayspeaks
-https://github.com/hari-prakaash
+- **Akshay K**  
+  GitHub: [@akshayspeaks](https://github.com/akshayspeaks)
+
+- **Hariprakaash**  
+  GitHub: [@hari-prakaash](https://github.com/hari-prakaash)
 
 ---
 

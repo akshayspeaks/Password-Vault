@@ -94,7 +94,7 @@ Libraries:
 ### Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/akshayspeaks/your-repo-name.git
+git clone https://github.com/akshayspeaks/our-project.git
 ```
 
 ### Step 2: Open project folder

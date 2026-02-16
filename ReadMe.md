@@ -55,6 +55,12 @@ OUR-PROJECT/
 │   ├── script.js                # UI logic and password generator
 │   ├── style.css                # Login styling
 │   └── auth.js                  # Firebase authentication & database logic
+|
+├── Mainpage/
+│   ├── main_index.html          # Login / Register page
+│   ├── main_script.js           # UI logic and password generator
+│   └── main_style.css           # Login styling
+│                     
 │
 ├── icon.svg                     # App icon (SVG)
 ├── icon.png                     # App icon (PNG)

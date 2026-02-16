@@ -22,10 +22,12 @@ body {
 
 /* Sidebar */
 .sidebar {
-  width: 220px;
-  background: #2c3e50;
+  width: 240px;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(12px);
   color: white;
   padding: 20px;
+  border-right: 1px solid rgba(255,255,255,0.1);
 }
 
 .sidebar h2 {
@@ -45,12 +47,22 @@ body {
 
 .sidebar li {
   margin: 10px 0;
+  padding: 8px 10px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: all 0.3s ease;
 }
 
 .sidebar li:hover {
+  background: rgba(26, 188, 156, 0.2);
   color: #1abc9c;
+  transform: translateX(6px);
+}
+
+.sidebar li.active {
+  background: #1abc9c;
+  color: black;
+  font-weight: 600;
 }
 
 .sidebar button {
@@ -82,17 +94,19 @@ body {
 
 .btn {
   padding: 10px 14px;
-  background: #3498db;
+  background: linear-gradient(45deg, #1abc9c, #16a085);
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background: #2980b9;
+  box-shadow: 0 0 10px #1abc9c;
+  transform: scale(1.05);
 }
+
 
 .cancel {
   background: #e74c3c;
@@ -115,48 +129,67 @@ body {
 }
 
 .card {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  color: white;
   padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  flex: 0 0 150px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  flex: 0 0 160px;
   text-align: center;
   position: relative;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(26,188,156,0.6);
 }
+
 
 /* Delete Buttons */
 /* Credential delete button */
 .delete-btn {
   position: absolute;
-  top: 6px;
-  right: 6px;
+  top: 8px;
+  right: 8px;
   background: transparent;
   color: #e74c3c;
   border: none;
-  font-size: 14px; /* smaller, professional */
+  font-size: 18px;   /* slightly bigger */
+  font-weight: bold;
   cursor: pointer;
   line-height: 1;
-  padding: 0;
+  padding: 2px 6px;
+  transition: 0.2s ease;
 }
+
+.delete-btn:hover {
+  transform: scale(1.2);
+  color: #ff4d4d;
+}
+
 
 /* Category delete button */
 .delete-cat {
   background: transparent;
   color: #e74c3c;
   border: none;
-  font-size: 14px; /* smaller, professional */
+  font-size: 17px;   /* slightly bigger */
+  font-weight: bold;
   cursor: pointer;
   line-height: 1;
-  padding: 0;
+  padding: 0 4px;
   margin-left: 8px;
+  transition: 0.2s ease;
 }
+
+.delete-cat:hover {
+  transform: scale(1.2);
+  color: #ff4d4d;
+}
+
 
 /* Modal */
 .modal {
@@ -170,12 +203,16 @@ body {
 }
 
 .modal-content {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
   width: 350px;
-  text-align: center;
+  animation: pop 0.3s ease;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
 }
+
 
 .modal-content input, .modal-content textarea {
   width: 90%;
@@ -214,4 +251,29 @@ textarea {
 #timeoutValue {
   font-weight: bold;
   margin-left: 10px;
+}
+body.loading {
+  visibility: hidden;
+}
+
+
+
+.modal-content .btn {
+  display: block;
+  margin: 15px auto 0 auto;
+}
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.undo-btn {
+  padding: 4px 8px;
+  font-size: 12px;
+  margin-left: 10px;
+  background: #f39c12;
+}
+
+.undo-btn:hover {
+  background: #d35400;
 }

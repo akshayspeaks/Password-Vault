@@ -26,15 +26,17 @@
         <a href="../login/index.html" class="nav-btn">Login</a>
       </li>
       <li>
-        <a href="../login/index.html"
-          class="nav-btn primary"
-          onclick="localStorage.setItem('showRegister','true')">
+        <a href="../login/index.html" class="nav-btn primary" onclick="localStorage.setItem('showRegister','true')">
           Register
         </a>
       </li>
       <li><a href="#faq" class="nav-btn">FAQ</a></li>
       <li><a href="#" class="nav-btn" onclick="scrollToContact()">Contact</a></li>
     </ul>
+
+    <!-- dark/light toggle -->
+    <button class="theme-toggle" id="themeToggle"></button>
+
 
   </nav>
 
@@ -46,8 +48,63 @@
 
       <!-- LEFT SIDE LOCK -->
       <div class="hero-lock">
-        <img src="../lock.png" alt="Secure Lock">
+
+        <div class="dashboard-card">
+
+          <div class="card-top">
+            <div class="color-box blue"></div>
+            <div class="color-box green"></div>
+            <div class="color-box yellow"></div>
+            <div class="color-box red"></div>
+          </div>
+
+          <div class="card-content">
+
+            <div class="card-left">
+
+              <div class="list-item">
+                <div class="line"></div>
+                <span class="status green"></span>
+              </div>
+
+              <div class="list-item">
+                <div class="line"></div>
+                <span class="status red"></span>
+              </div>
+
+              <div class="list-item">
+                <div class="line"></div>
+                <span class="status yellow"></span>
+              </div>
+
+              <div class="list-item">
+                <div class="line"></div>
+                <span class="status green"></span>
+              </div>
+
+              <div class="list-item">
+                <div class="line"></div>
+                <span class="status red"></span>
+              </div>
+
+            </div>
+
+            <div class="card-right">
+
+              <div class="chart"></div>
+
+              <div class="sidebar-line"></div>
+              <div class="sidebar-line"></div>
+              <div class="sidebar-line"></div>
+              <div class="sidebar-line small"></div>
+
+            </div>
+
+          </div>
+
+        </div>
       </div>
+
 
       <!-- RIGHT SIDE TEXT -->
       <div class="main-content floating">
@@ -57,8 +114,7 @@
           and keep your vault safe with modern security.
         </p>
 
-        <button class="main-btn"
-                onclick="window.location.href='../login/index.html'">
+        <button class="main-btn" onclick="window.location.href='../login/index.html'">
           Get Started
         </button>
 
@@ -174,7 +230,6 @@
         you can access your vault.
       </div>
     </div>
-
   </section>
   <section id="contact" class="contact-section">
 
@@ -206,8 +261,8 @@
         </form>
       </div>
 
-</div>   <!-- CLOSE contact-container -->
-</section> <!-- CLOSE contact-section -->
+    </div> <!-- CLOSE contact-container -->
+  </section> <!-- CLOSE contact-section -->
 
 
 
@@ -252,7 +307,7 @@
     });
   </script>
 
-  
+
 
   <!-- FOOTER START -->
   <footer class="footer">
@@ -286,7 +341,7 @@
 
   </footer>
   <!-- FOOTER END -->
-  
+
 
   <script>
     function scrollToContact() {
@@ -356,16 +411,11 @@
   </script>
 
 
-
-
-  
-
   <!-- Modern Toast Notification -->
   <div id="toast" class="toast">
     <span class="toast-icon">✉️</span>
     <span id="toastText">Message sent!</span>
   </div>
-
 
 
 </body>

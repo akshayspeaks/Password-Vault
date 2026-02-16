@@ -57,9 +57,9 @@ OUR-PROJECT/
 │   └── auth.js                  # Firebase authentication & database logic
 |
 ├── Mainpage/
-│   ├── main_index.html          # Login / Register page
+│   ├── main_index.html          # Main password storage page
 │   ├── main_script.js           # UI logic and password generator
-│   └── main_style.css           # Login styling
+│   └── main_style.css           # Main styling
 │                     
 │
 ├── icon.svg                     # App icon (SVG)

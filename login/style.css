@@ -531,3 +531,18 @@ body.light .strength {
   color: #ef4444;
   /* red */
 }
+
+/* NAV CONTAINER */
+.navbar ul {
+  position: relative;
+}
+
+/* INDICATOR LINE */
+.nav-indicator {
+  position: absolute;
+  bottom: -4px;
+  height: 3px;
+  background: linear-gradient(90deg, #00f5ff, #007bff);
+  border-radius: 2px;
+  transition: all 0.35s ease;
+}

@@ -26,7 +26,7 @@
     <h1 class="logo"><img src="../icon.svg" alt="logo">Password Vault</h1>
 
     <ul>
-      <li>Home</li>
+      <a href="../Mainpage/main_index.html">Home</a>
       <li>About</li>
       <li>Services</li>
       <li>Contact</li>
@@ -162,6 +162,18 @@
   <script src="script.js"></script>
   <script type="module" src="auth.js"></script>
 
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+
+    if(localStorage.getItem("showRegister") === "true")
+    {
+        document.getElementById("authBox").classList.add("active");
+        localStorage.removeItem("showRegister");
+    }
+
+  });
+  </script>
+  
 </body>
 
 </html>

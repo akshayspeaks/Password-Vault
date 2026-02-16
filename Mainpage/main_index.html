@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Password Vault - Welcome</title>
+  <!-- SVG Favicon (modern browsers) -->
+  <link rel="icon" type="icon/svg+xml" href="../icon.svg">
+
+  <!-- PNG Favicon (fallback for older browsers) -->
+  <link rel="icon" type="icon/png" sizes="32x32" href="../icon.png">
+  <link rel="icon" type="icon/png" sizes="16x16" href="../icon.png">
+  <link rel="stylesheet" href="main_style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../icon.png" alt="Vault Logo">
+      <span>Password Vault</span>
+    </div>
+    <ul>
+      <li>
+        <a href="../login/index.html" class="nav-btn">Login</a>
+      </li>
+      <li>
+        <a href="../login/index.html"
+          class="nav-btn primary"
+          onclick="localStorage.setItem('showRegister','true')">
+          Register
+        </a>
+      </li>
+      <li><a href="#faq" class="nav-btn">FAQ</a></li>
+      <li><a href="#" class="nav-btn" onclick="scrollToContact()">Contact</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="main-hero">
+    <div class="hero-glow"></div>
+
+    <div class="hero-wrapper">
+
+      <!-- LEFT SIDE LOCK -->
+      <div class="hero-lock">
+        <img src="../lock.png" alt="Secure Lock">
+      </div>
+
+      <!-- RIGHT SIDE TEXT -->
+      <div class="main-content floating">
+        <h1>A New Way to Secure</h1>
+        <p>
+          Protect your credentials, manage categories,
+          and keep your vault safe with modern security.
+        </p>
+
+        <button class="main-btn"
+                onclick="window.location.href='../login/index.html'">
+          Get Started
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- White Section -->
+  <section class="white-section">
+    <h2>Start Exploring</h2>
+    <p>
+      Explore a secure way to manage your digital life.
+      Simple. Fast. Protected.
+    </p>
+  </section>
+
+  <!-- TRUST SECTION START -->
+  <section class="trusted">
+
+    <p class="trusted-title">Trusted by developers worldwide</p>
+
+    <div class="trusted-logos">
+      <span>Google</span>
+      <span>Microsoft</span>
+      <span>Amazon</span>
+      <span>GitHub</span>
+    </div>
+
+  </section>
+  <!-- TRUST SECTION END -->
+
+
+
+  <!-- FEATURES SECTION START -->
+  <section class="features">
+
+    <h2>Powerful Features</h2>
+
+    <div class="feature-grid">
+
+      <div class="feature-card">
+        <div class="icon">🔐</div>
+        <h3>End-to-End Encryption</h3>
+        <p>Your vault is encrypted and fully secure.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon">⚡</div>
+        <h3>Instant Autofill</h3>
+        <p>Login faster with secure autofill.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon">📱</div>
+        <h3>Multi-Device Sync</h3>
+        <p>Access vault across all devices.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon">🧠</div>
+        <h3>Password Generator</h3>
+        <p>Create strong passwords instantly.</p>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- FEATURES SECTION END -->
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="faq-section">
+
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">1. How many apps can I store?</div>
+      <div class="faq-answer">
+        There is no limit for storing info.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        2. What happens if I forget my master password?
+      </div>
+      <div class="faq-answer">
+        For security reasons, your master password cannot be recovered.
+        You’ll need to reset your vault and create a new one.
+        This ensures that only you ever have access to your data.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        3. Does Pass Vault auto-fill my passwords?
+      </div>
+      <div class="faq-answer">
+        Yes, Pass Vault can auto-fill credentials in supported browsers
+        and apps, saving you time while keeping your login process secure.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        4. Is my data secure in Pass Vault?
+      </div>
+      <div class="faq-answer">
+        Yes. All your data is encrypted and protected so that only
+        you can access your vault.
+      </div>
+    </div>
+
+  </section>
+  <section id="contact" class="contact-section">
+
+    <div class="contact-container">
+
+      <!-- LEFT SIDE -->
+      <div class="contact-left">
+        <h2>Contact Support</h2>
+        <p>We’d love to hear from you.</p>
+        <p>If you have any questions or need support, feel free to reach out.</p>
+
+        <div class="contact-email">
+          <img src="https://www.gstatic.com/images/branding/product/2x/gmail_2020q4_48dp.png" alt="Gmail"
+            class="gmail-icon modern-gmail">
+          <span>gopigokulhariakshay@gmail.com</span>
+        </div>
+
+
+
+      </div>
+
+      <!-- RIGHT SIDE FORM -->
+      <div class="contact-right">
+        <form class="contact-form" onsubmit="sendEmail(event)">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <textarea id="message" placeholder="Additional Notes" required></textarea>
+          <button type="submit" class="send-btn">Send Message</button>
+        </form>
+      </div>
+
+</div>   <!-- CLOSE contact-container -->
+</section> <!-- CLOSE contact-section -->
+
+
+
+
+  </section>
+
+  <!-- TESTIMONIALS START -->
+  <section class="testimonials">
+
+    <h2>What users say</h2>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial">
+        <p>"Best password manager I have used."</p>
+        <span>— User</span>
+      </div>
+
+      <div class="testimonial">
+        <p>"Simple, secure, and fast."</p>
+        <span>— Developer</span>
+      </div>
+
+      <div class="testimonial">
+        <p>"Premium UI and very reliable."</p>
+        <span>— User</span>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- TESTIMONIALS END -->
+
+
+  <script>
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+      item.querySelector(".faq-question").addEventListener("click", () => {
+        item.classList.toggle("active");
+      });
+    });
+  </script>
+
+  
+
+  <!-- FOOTER START -->
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <div class="footer-brand">
+        <h3>Password Vault</h3>
+        <p>Secure your digital life with confidence.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Product</h4>
+        <p>Features</p>
+        <p>Security</p>
+        <p>Support</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Company</h4>
+        <p>About</p>
+        <p>Contact</p>
+        <p>Privacy</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 Password Vault. All rights reserved.
+    </div>
+
+  </footer>
+  <!-- FOOTER END -->
+  
+
+  <script>
+    function scrollToContact() {
+      const contact = document.getElementById("contact");
+
+      contact.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script>
+    emailjs.init({
+      publicKey: "91UByY3DBkANorpzx",
+    });
+
+    function showToast(message, success = true) {
+      const toast = document.getElementById("toast");
+      const text = document.getElementById("toastText");
+
+      text.textContent = message;
+
+      toast.className = "toast show " + (success ? "success" : "error");
+
+      setTimeout(() => {
+        toast.className = "toast";
+      }, 3000);
+    }
+
+    function sendEmail(event) {
+      event.preventDefault();
+
+      const btn = document.querySelector(".send-btn");
+      btn.disabled = true;
+      btn.innerHTML = "Sending... ✉️";
+
+      emailjs.send("service_en62moi", "template_hmyfbfd", {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+      })
+        .then(() => {
+
+          btn.innerHTML = "Sent ✓";
+
+          showToast("Message sent successfully!", true);
+
+          document.querySelector(".contact-form").reset();
+
+          setTimeout(() => {
+            btn.innerHTML = "Send Message ✉️";
+            btn.disabled = false;
+          }, 2000);
+
+        })
+        .catch(() => {
+
+          btn.innerHTML = "Send Message ✉️";
+          btn.disabled = false;
+
+          showToast("Failed to send message", false);
+
+        });
+    }
+  </script>
+
+
+
+
+  
+
+  <!-- Modern Toast Notification -->
+  <div id="toast" class="toast">
+    <span class="toast-icon">✉️</span>
+    <span id="toastText">Message sent!</span>
+  </div>
+
+
+
+</body>
+
+</html>

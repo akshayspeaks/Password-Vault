@@ -46,7 +46,7 @@ It supports multiple login methods, password generation, and secure cloud storag
 OUR-PROJECT/
 │
 ├── dashboard/
-│   ├── dashboard_index.html      # Dashboard UI
+│   ├── dashboard_index.html     # Dashboard UI
 │   ├── dashboard_script.js      # Dashboard logic
 │   └── dashboard_styles.css     # Dashboard styling
 │
